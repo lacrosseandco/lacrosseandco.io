@@ -1,0 +1,1233 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
+
+
+
+/*************************
+*******Typography******
+**************************/
+
+body {
+    background: #f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+    color: #4e4e4e;
+    line-height: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #4e4e4e;
+}
+
+h1 {
+    font-size: 36px;
+    color: #ddd;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #787878;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+a {
+    color: #c52d2f;
+    -webkit-transition: color 300ms, background-color 300ms;
+    -moz-transition: color 300ms, background-color 300ms;
+    -o-transition: color 300ms, background-color 300ms;
+    transition: color 300ms, background-color 300ms;
+}
+
+a:hover,
+a:focus {
+    color: #d43133;
+}
+
+hr {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #fff;
+}
+
+.nopd {
+    padding: 0 0;
+}
+
+.nomr {
+    margin: 0 0;
+}
+
+.nopdr {
+    padding-right: 0;
+}
+
+.nopdl {
+    padding-left: 0;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/*****************************
+ *   01 - Header css
+ ***************************** */
+
+.header_area {
+    background: #02C39A;
+    position: relative;
+}
+
+.main_menu .bg-light {
+    background-color: transparent !important
+}
+
+.main_menu nav ul.navbar-nav li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.main_menu .navbar-nav li {
+    padding: 10px 10px;
+}
+
+.main_menu .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.main_menu .navbar-light .navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+
+
+/*****************************
+ *   02 - Slider css
+ ***************************** */
+
+#home_area .home_area .single_slide {
+    background-size: cover;
+    height: 760px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#home_area .home_area .single_slide h1 {
+    font-size: 90px;
+    font-weight: 700;
+    font-weight: 58px;
+    text-transform: uppercase;
+    color: #02C39A;
+}
+.home_content p{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+#home_area .home_area .single_slide::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#home_area .home_area .single_slide .home_btn_group {
+    margin-top: 20px;
+}
+
+.home_content img {
+    max-width: 175px;
+    height: 175px;
+    border-radius: 90px;
+    border: 2px solid #02C39A;
+    margin: 0 auto;
+}
+
+.social_link ul li {
+    display: inline-block;
+}
+
+.home_slider .owl-nav button {
+    position: absolute;
+    top: 50%;
+}
+
+.home_slider .owl-nav button.owl-prev,
+.home_slider .owl-nav button.owl-next {
+    font-size: 30px;
+    color: #02C39A80;
+}
+
+.home_slider .owl-nav button.owl-prev:hover,
+.home_slider .owl-nav button.owl-next:hover {
+    color: #02C39A;
+}
+
+.home_slider .owl-nav button.owl-prev {
+    position: absolute;
+    left: 20px;
+}
+
+.home_slider .owl-nav button.owl-next {
+    position: absolute;
+    right: 20px;
+}
+.cd-headline.clip.is-full-width {
+    color: #F0F3BD;
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.cd-headline.clip.is-full-width .is-visible {
+    color: #02C39A;
+}
+.home_content button {
+    background: #02C39A80;
+    border: none;
+    border-radius: 3px;
+    transition: background .5s;
+}
+.home_content button a.kc_btn{
+    color: #ddd;
+    padding: 10px 35px;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.home_content button:hover {
+    background: #02C39A;
+}
+.home_content button a.kc_btn i{
+    margin-left: 10px;
+}
+
+
+/*****************************
+ *   02 - Slider css
+ ***************************** */
+
+.section_title h1 {
+    font-size: 90px;
+    text-transform: uppercase;
+    color: #000;
+    opacity: .1;
+    line-height: 1;
+    text-align: left;
+    margin-top: -12px;
+}
+.section_title h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    position: relative;
+}
+.section_title_dark h4{
+    color: #F0F3BD;
+}
+.section_title h4::before {
+    position: absolute;
+    content: "";
+    bottom: -40px;
+    left: 50%;
+    margin-left: -15px;
+    font-family: fontawesome;
+    color: #02C39A;
+}
+.section_title h4::after {
+    position: absolute;
+    width: 250px;
+    background: #02C39A;
+    height: 2px;
+    content: "";
+    top: 54px;
+    right: 50%;
+    margin-right: -125px;
+}
+.section_title.dark h1 {
+    color: #fff;
+}
+
+.section_title.dark h4 {
+    color: #f1f1f1;
+}
+
+
+/* ==========================================================================
+   About us css
+   ========================================================================== */
+.about_area{
+    padding-bottom: 60px;
+}
+.about_img img {
+    min-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.social_link ul li a {
+    font-size: 36px;
+    color: #00A896;
+}
+.social_link ul li a:hover {
+    color: #00A896;
+}
+.social_link ul li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+.about_details h2 {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #00A896;
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+}
+.about_details h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+}
+.about_desc p {
+    line-height: 1.6;
+    text-align: justify;
+    font-weight: 300;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Education Timeline css
+   ========================================================================== */
+.edu_area{
+    background: #14213D;
+    padding-bottom: 60px;
+}
+
+
+/* ==========================================================================
+    Education Timeline css
+   ========================================================================== */
+
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+
+.cd-container {
+    /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.cd-container::after {
+    /* clearfix */
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+#cd-timeline {
+    position: relative;
+    padding: 2em 0;
+    margin-top: 2em;
+    /*margin-bottom: 2em;*/
+}
+
+#cd-timeline::before {
+    /* this is the vertical line */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: #d7e4ed;
+}
+
+@media only screen and (min-width: 1170px) {
+    #cd-timeline {
+        margin-top: 3em;
+        /*margin-bottom: 3em;*/
+    }
+    #cd-timeline::before {
+        left: 50%;
+        margin-left: -2px;
+    }
+}
+
+.cd-timeline-block {
+    position: relative;
+    margin: 2em 0;
+}
+
+.cd-timeline-block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cd-timeline-block:first-child {
+    margin-top: 0;
+}
+
+.cd-timeline-block:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-timeline-block {
+        margin: 4em 0;
+    }
+    .cd-timeline-block:first-child {
+        margin-top: 0;
+    }
+    .cd-timeline-block:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.cd-left {
+    float: left;
+}
+
+.cd-left::before {
+    top: 24px;
+    left: 100%!important;
+    border-color: transparent!important;
+    border-left-color: white!important;
+}
+
+.cd-right {
+    float: right;
+}
+
+.cd-rigth::before {
+    top: 24px;
+    left: 100%;
+    right: auto;
+    border-color: transparent;
+    border-right-color: white;
+}
+
+@media screen and (max-width: 1169px) and (min-width: 240px) {
+    .cd-timeline-content::before {
+        border: none!important;
+    }
+    ,
+    cd-timeline-content {
+        display: block;
+    }
+    .cd-left,
+    .cd-right {
+        float: left;
+    }
+    .cd-left::before {
+        top: 15px!important;
+        right: 100%!important;
+        left: auto !important;
+        border: 7px solid transparent!important;
+        border-color: transparent!important;
+        border-right: 7px solid white !important
+    }
+
+    .cd-timeline-img strong {
+        font-size: 15px!important;
+    }
+}
+
+
+.cd-timeline-img strong {
+    font-size: 21px;
+}
+
+
+.cd-timeline-img {
+    font-size: 21px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #02C39A;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    font-size: 12px;
+    padding-top: 6px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+
+.cd-timeline-img.cd-movie {
+    background: #c03b44;
+}
+
+.cd-timeline-img.cd-location {
+    background: #f0ca45;
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-timeline-img {
+        width: 60px;
+        height: 60px;
+        left: 50%;
+        margin-left: -30px;
+        /* Force Hardware Acceleration in WebKit */
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+    }
+    .cssanimations .cd-timeline-img.is-hidden {
+        visibility: hidden;
+    }
+    .cssanimations .cd-timeline-img.bounce-in {
+        visibility: visible;
+        -webkit-animation: cd-bounce-1 0.6s;
+        -moz-animation: cd-bounce-1 0.6s;
+        animation: cd-bounce-1 0.6s;
+    }
+}
+
+@-webkit-keyframes cd-bounce-1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.5);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes cd-bounce-1 {
+    0% {
+        opacity: 0;
+        -moz-transform: scale(0.5);
+    }
+
+    60% {
+        opacity: 1;
+        -moz-transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+    }
+}
+
+@keyframes cd-bounce-1 {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.cd-timeline-content {
+    position: relative;
+    margin-left: 60px;
+    background: white;
+    border-radius: 0.25em;
+    padding: 1em;
+    /*box-shadow: 0 3px 0 #d7e4ed;*/
+    border: 1px solid #ddd;
+}
+
+.cd-timeline-content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.edu_area .cd-timeline-content h2
+.experience_area .cd-timeline-content h2, {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #02C39A;
+}
+.edu_area .cd-timeline-content h3,
+.experience_area .cd-timeline-content h3 {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-top: 1px solid #ddd;
+}
+
+.cd-timeline-content p,
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
+    font-size: 13px;
+    font-size: 0.8125rem;
+}
+
+.cd-timeline-content .cd-read-more,
+.cd-timeline-content .cd-date {
+    display: inline-block;
+}
+
+.cd-timeline-content p {
+    margin: 1em 0;
+    line-height: 1.6;
+}
+
+.cd-timeline-content .cd-read-more {
+    float: right;
+    padding: .8em 1em;
+    background: #acb7c0;
+    color: white;
+    border-radius: 0.25em;
+}
+
+.no-touch .cd-timeline-content .cd-read-more:hover {
+    background-color: #bac4cb;
+}
+
+.cd-timeline-content .cd-date {
+    float: left;
+    padding: .8em 0;
+    opacity: .7;
+}
+
+.cd-timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid white;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-timeline-content h2 {
+        font-size: 20px;
+    }
+    .cd-timeline-content p {
+        font-size: 16px;
+    }
+    .cd-timeline-content .cd-read-more,
+    .cd-timeline-content .cd-date {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-timeline-content {
+        margin-left: 0;
+        padding: 1em;
+        width: 45%;
+    }
+
+    .cd-timeline-content .cd-read-more {
+        float: left;
+    }
+    .cd-timeline-content .cd-date {
+        position: absolute;
+        width: 100%;
+        left: 122%;
+        top: 6px;
+        font-size: 16px;
+        font-size: 1rem;
+    }
+
+    .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+        left: auto;
+        right: 122%;
+        text-align: right;
+    }
+    .cssanimations .cd-timeline-content.is-hidden {
+        visibility: hidden;
+    }
+    .cssanimations .cd-timeline-content.bounce-in {
+        visibility: visible;
+        -webkit-animation: cd-bounce-2 0.6s;
+        -moz-animation: cd-bounce-2 0.6s;
+        animation: cd-bounce-2 0.6s;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    /* inverse bounce effect on even content blocks */
+    .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
+        -webkit-animation: cd-bounce-2-inverse 0.6s;
+        -moz-animation: cd-bounce-2-inverse 0.6s;
+        animation: cd-bounce-2-inverse 0.6s;
+    }
+}
+
+@-webkit-keyframes cd-bounce-2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100px);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(20px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-moz-keyframes cd-bounce-2 {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(-100px);
+    }
+
+    60% {
+        opacity: 1;
+        -moz-transform: translateX(20px);
+    }
+
+    100% {
+        -moz-transform: translateX(0);
+    }
+}
+
+@keyframes cd-bounce-2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        -o-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes cd-bounce-2-inverse {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(-20px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-moz-keyframes cd-bounce-2-inverse {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(100px);
+    }
+
+    60% {
+        opacity: 1;
+        -moz-transform: translateX(-20px);
+    }
+
+    100% {
+        -moz-transform: translateX(0);
+    }
+}
+
+@keyframes cd-bounce-2-inverse {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(-20px);
+        -moz-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        -o-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+.experience_area .cd-timeline-content {
+    background: #02C39A;
+}
+.experience_area .cd-timeline-content::before {
+    border-right: 7px solid #02C39A;
+}
+.experience_area .cd-left::before {
+    border-left-color: #02C39A !important;
+}
+.cd-timeline-img strong i {
+    font-size: 43px;
+    line-height: 1.1;
+}
+
+
+/* ==========================================================================
+   Portfolio CSS
+   ========================================================================== */
+.portfolio_area {
+    background: #14213D;
+    padding-bottom: 50px;
+}
+.portfolio_area button {
+    margin: 25px auto;
+    display: block;
+    background: #02C39A;
+    border: none;
+    border-radius: 3px;
+}
+.portfolio_area button:hover {
+    background: #02C39A60;
+    transition: background .3s
+}
+.portfolio_area button a.kc_btn {
+    color: #fff;
+    padding: 8px 25px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Contact CSS
+   ========================================================================== */
+.contact_area{
+    margin-bottom: 50px;
+}
+.contact_area input.form-control {
+    font-size: 1.3rem;
+    height: 35px;
+    font-weight: 300;
+}
+.contact_area textarea.form-control {
+    font-size: 1.3rem;
+    height: 35px;
+    font-weight: 300;
+}
+.contact_area .btn {
+    background: #02C39A;
+    display: block;
+    margin: 5px auto;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.footer_area {
+  background: #02C39A;
+}
+.footer_area p {
+  line-height: 1;
+  margin: 0px;
+  padding: 15px 0;
+  color: #f1f1f1;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
